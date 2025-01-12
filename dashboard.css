@@ -1,0 +1,119 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+  }
+  /* Animating the Heading */
+  h1 {
+    font-size: 3rem; /* Increased size */
+    margin-bottom: 30px;
+    color: #ffcc00;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    animation: fadeInDown 1.5s ease-out;
+  }
+  /* Container Styling */
+  .container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px; /* Increased padding */
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 90%; /* Increased width */
+    max-width: 600px; /* Increased max-width */
+    animation: bounceIn 1s ease-out;
+  }
+  
+  /* Input Styling */
+  input[type="number"] {
+    width: 90%; /* Increased width */
+    padding: 15px; /* Increased padding */
+    border-radius: 10px; /* Increased border-radius */
+    border: 1px solid #ddd;
+    margin: 20px 0; /* Increased margin */
+    font-size: 1.5rem; /* Increased font size */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  input[type="number"]:focus {
+    border-color: #ffaa00;
+    box-shadow: 0 0 15px rgba(255, 170, 0, 0.5);
+    outline: none;
+  }
+  
+  /* Button Styling */
+  button {
+    background: #ffcc00;
+    border: none;
+    padding: 15px 30px; /* Increased padding */
+    font-size: 1.3rem; /* Increased font size */
+    color: #333;
+    border-radius: 30px; /* Increased border-radius */
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Increased shadow */
+    transition: background 0.3s ease, transform 0.2s ease;
+    display: block;
+    margin: 30px auto; /* Increased margin */
+  }
+  
+  button:hover {
+    background: #ffaa00;
+    transform: scale(1.2); /* Slightly larger hover effect */
+  }
+  
+  /* Quote Styling */
+  .quote {
+    margin-top: 40px;
+    font-size: 1.6rem; /* Increased font size */
+    color: #de4a4a;
+    font-style: italic;
+    text-align: center;
+    animation: fadeInUp 2s ease-out;
+  }
+  /* Keyframes for Fade-In Down */
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /* Keyframes for Fade-In Up */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Keyframes for Bounce-In Effect */
+  @keyframes bounceIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.3);
+    }
+    50% {
+      opacity: 0.9;
+      transform: scale(1.1);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  

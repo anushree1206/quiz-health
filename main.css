@@ -1,0 +1,93 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  /* Header Styling */
+  .head h1 {
+    font-size: 3.5rem; 
+    color: #ffcc00;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    animation: fadeInDown 1.5s ease-out;
+    margin-top: 1%;
+    top:1%;
+  }
+  
+  /* Paragraph Styling */
+  .main p {
+    font-size: 1.5rem; /* Increased font size */
+    line-height: 1.8;
+    color: #f0f0f0;
+    margin-bottom: 30px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s ease-out;
+  }
+  
+  /* Button Styling */
+  #start-button {
+    background: #ffcc00;
+    color: #333;
+    border: none;
+    padding: 15px 40px; /* Larger button size */
+    font-size: 1.5rem; /* Larger text size */
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  
+  #start-button:hover {
+    background: #ffaa00;
+    transform: scale(1.1); /* Slight hover scale effect */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+  }
+  
+  #start-button:active {
+    transform: scale(1);
+    background: #ff9900;
+  }
+  
+  /* Keyframes for Fade-In Down Animation */
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Keyframes for Fade-In Up Animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+  /* Keyframes for Fade-In Effect */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

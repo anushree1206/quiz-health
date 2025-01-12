@@ -1,0 +1,119 @@
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 720vh;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  input[type="radio"] {
+    transform: scale(1.8); /* Increases the size by 1.5 times *//* Optional: Adds space between the radio button and the label */
+  }
+  /* Container Styling */
+  .container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    width: 80%;
+    max-width: 600px;
+    animation: fadeIn 1s ease-out;
+    overflow: hidden;
+  }
+  /* Heading Styling */
+  h1 {
+    margin-bottom: 20px;
+    color: #ffcc00;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  /* Quiz Question Styling */
+  .question {
+    margin-bottom: 20px;
+  font-size: 40px; /* Increase font size */
+  line-height: 1.8; /* Add line height for readability */
+  color: #333; /* Optional: Darken text color for better visibility */
+  font-weight: bold; /* Optional: Make the text bold */
+  animation: slideInLeft 0.5s ease-in-out;
+  }
+  
+  /* Options Styling */
+  .options {
+    margin: 10px 0;
+    text-align: left;
+  }
+  
+  .options label {
+    display: block;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  .options label:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px);
+  }
+  
+  /* Submit Button Styling */
+  button {
+    background: #ffcc00;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #333;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.2s ease;
+    display: block;
+    margin: 20px auto;
+  }
+  
+  button:hover {
+    background: #ffaa00;
+    transform: scale(1.1);
+  }
+  
+  /* Result Styling */
+  #result {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    opacity: 0;
+    animation: slideIn 0.8s ease-out forwards;
+  }
+  
+  /* Keyframes for Fade-In Effect */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Keyframes for Result Slide-In */
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
